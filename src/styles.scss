@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+$bodyColor: #253564;
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {
+    background-color: $bodyColor;
+    min-height: 100vh;
+}

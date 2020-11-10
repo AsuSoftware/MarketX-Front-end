@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+$bold: 700;
+$semiBold: 600;
+$medium: 500;
+$regular: 400;
+
+$yellow: #cd9d4e;
+$darkBlue: #15213e;
+$green: #13463b;
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.container .background-first {
+  position: absolute;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  bottom: 0%;
+  z-index: -1;
+}
+
+.first {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.first .numbers {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  justify-content: center;
+}
+
+.first .first-arrow {
+  display: flex;
+  align-items: flex-end;
+}
+
+.first .first-arrow i {
+  font-size: 38px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.first .first-arrow i:nth-child(1) {
+  margin-right: 15px;
+}
+
+.first .numbers p {
+  margin: 5px 0;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+.first .numbers .active-number {
+  font-size: 30px;
+  font-weight: $bold;
+}
+
+.first .numbers .active-number::before {
+  content: "";
+  width: 400px;
+  background-color: $yellow;
+}
+
+.first .container-current-element {
+  display: flex;
+}
+
+.first .container-current-element .items {
+  margin-left: 60px;
+}
+
+.first .container-current-element .description {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.first .container-current-element .description .price-current-product {
+  display: flex;
+  margin-right: 20px;
+}
+
+.first .container-current-element .description .price-current-product .valuta {
+  font-size: 26px;
+  position: relative;
+  bottom: 4px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: $medium;
+}
+
+.first
+  .container-current-element
+  .description
+  .price-current-product
+  p:nth-child(2) {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: $medium;
+}
+
+.first .container-current-element .description .btn-buy {
+  background-color: $darkBlue;
+  border: 0;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: $semiBold;
+}
+
+.first
+  .container-current-element
+  .description
+  .description-current-product
+  .info {
+  border-left: 5px solid $yellow;
+  padding-left: 5px;
+}
+
+.first
+  .container-current-element
+  .description
+  .description-current-product
+  .info
+  h2:first-child {
+  font-size: 35px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: $semiBold;
+}
+
+.first
+  .container-current-element
+  .description
+  .description-current-product
+  .info
+  .item-title {
+  font-size: 25px;
+  margin-top: 6px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: $medium;
+}
+
+.first .container-current-element .photo {
+  width: 280px;
+}
+
+.first .container-current-element .photo img {
+  width: 100%;
+}
+
+.first .container-current-element .items .item-description {
+  margin: 30px 0;
+}
+
+.first .container-current-element .items .item-description p {
+  width: 190px;
+  line-height: 22px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: $regular;
+}
+
+@media only screen and (max-width: 1100px) {
+
+  .container .first {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .container .first .numbers {
+    display: none;
+  }
+
+  .container .first .container-current-element .description {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 100px;
+  }
+
+  .container
+    .first
+    .container-current-element
+    .description
+    .price-current-product {
+    margin-top: 30px;
+  }
+
+  .container .first .container-current-element {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .containr .first .first-arrow {
+    width: 100%;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 55%;
+  }
+}

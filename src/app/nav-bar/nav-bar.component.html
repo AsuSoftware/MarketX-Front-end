@@ -1,0 +1,39 @@
+<nav class="nav-bar">
+    <div class="menu">
+        <img src="../assets/img/menu-icon.png" alt="menu icon" />
+        <h5 class="logo">MarketX</h5>
+    </div>
+    <div class="nav-elements">
+        <div class="notification">
+            <i class="fas fa-bell"></i>
+            <div class="notificationAllert"></div>
+        </div>
+        <div class="cart">
+            <i class="fas fa-shopping-bag"></i>
+            <div class="numberItemCart">3</div>
+        </div>
+        <div class="language">
+            <div class="current-language">
+                <p>EN</p>
+                <i (click)="languageOption()" class="fas fa-angle-down"></i>
+            </div>
+            <ul *ngIf="languageOptionState" class="language-options">
+                <li>EN</li>
+                <li>IT</li>
+                <li>RO</li>
+            </ul>
+        </div>
+        <div class="search">
+            <i class="fas fa-search"></i>
+        </div>
+    </div>
+</nav>
+
+<!--
+<ul class="links">
+    <a routerLink="/home" routerLinkActive="active">Home</a>
+    <a routerLink="/home" routerLinkActive="active">Map</a>
+    <a routerLink="/home" routerLinkActive="active">Features</a>
+    <a routerLink="/login">Login</a>
+    <a routerLink="/sign-up">SignUp</a>
+</ul> -->
